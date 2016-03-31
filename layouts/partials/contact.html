@@ -1,0 +1,17 @@
+						<hr />
+						<h2>{{ .Site.Params.contact.formTitle }}</h2>
+						<form method="post" action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="{{ .Site.Params.contact.namePlaceholder }}" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="{{ .Site.Params.contact.emailPlaceholder }}" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="{{ .Site.Params.contact.messagePlaceholder }}" rows="4"></textarea>
+							</div>
+							<ul class="actions">
+								<li><button type="submit">{{ .Site.Params.contact.buttonText }}</button></li>
+							</ul>
+						</form>
+						<hr />

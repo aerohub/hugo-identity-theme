@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Hugo Identity by Pavel Kanyshev
+	github.com/aerohub
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html>
+	<head>
+		<title>{{ .Site.Title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="{{ .Site.BaseURL }}/images/icons/{{ .Site.Params.favicon  }}" type="image/x-icon" />
+		<link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}/images/icons/{{ .Site.Params.appletouchicon  }}" />
+		<!--[if lte IE 8]><script src="{{ .Site.BaseURL }}/assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="{{ .Site.BaseURL }}/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ .Site.BaseURL }}/assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="{{ .Site.BaseURL }}/assets/css/noscript.css" /></noscript>
+		<style>
+		body {
+		height: 100%;
+		background-color: #ffffff;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/{{ .Site.Params.background  }}");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/{{ .Site.Params.background  }}");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/{{ .Site.Params.background  }}");
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/{{ .Site.Params.background  }}");
+		background-repeat: repeat,			no-repeat,			no-repeat;
+		background-size: 100px 100px, cover,				cover;
+		background-position: top left,		center center,		bottom center;
+		background-attachment: fixed,			fixed,				fixed;
+			}
+		</style>
+		{{ .Hugo.Generator }}
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="{{ .Site.BaseURL }}/images/avatars/{{ .Site.Params.avatar  }}" alt="" /></span>
+							<h1>{{ .Site.Params.name  }}</h1>
+							<p>{{ .Site.Params.position  }}</p>
+						</header>
+							        {{ if .Site.Params.contact.enable }}
+										{{ partial "contact.html" . }}
+									{{ end }}
+						<footer>
+							<ul class="icons">
+								{{ range .Site.Params.social }}
+									<li><a href="{{ .link }}" class="{{ .icon }}">{{ .title }}</a></li>
+								{{ end }}
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; {{ .Site.Params.footer.copyright  }}</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="{{ .Site.BaseURL }}/assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+		{{ template "_internal/google_analytics.html" . }}
+	</body>
+</html>

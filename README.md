@@ -1,8 +1,16 @@
 # Hugo Identity Theme
 
-Identity Theme
+Hugo Identity Theme is based on [Identity template by HTML5 UP](http://html5up.net/identity). It was ported to Hugo for training and fun. It is rather configurable and flexible despite it's simplicity.
 
-![Hugo Identity Theme screenshot](https://raw.githubusercontent.com/aerohub/hugo-identity-theme/master/images/hugo-identity.png)
+## Features
+
+- Responsive design
+- Configurable appearance
+- Configurable social links
+- Contact form
+- Google Analytics
+
+![Hugo Identity Theme screenshot](https://raw.githubusercontent.com/aerohub/hugo-identity-theme/master/images/screenshot.png)
 
 
 ## Contents

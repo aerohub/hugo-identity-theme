@@ -10,6 +10,8 @@ Hugo Identity Theme is based on [Identity template by HTML5 UP](http://html5up.n
 - Contact form
 - Google Analytics
 
+## Screenshot
+
 ![Hugo Identity Theme screenshot](https://raw.githubusercontent.com/aerohub/hugo-identity-theme/master/images/screenshot.png)
 
 

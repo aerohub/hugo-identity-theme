@@ -18,6 +18,12 @@ googleAnalytics = "UA-XXXXX-Y"
 	appletouchicon = "apple-touch-icon-precomposed.png"
 	background = "bg1.jpg"
 	avatar = "jane.jpg"
+
+  # Custom styling
+  # To customize the styling of this theme, uncomment and edit the following line to point 
+  # to your site's css in the assets/ directory. 
+
+  # custom_css = ["css/foo.bar"]
 	
 	# Personal settings
 	

@@ -22,6 +22,7 @@ Hugo Identity Theme is based on [Identity template by HTML5 UP](http://html5up.n
     - [The config file](#the-config-file)
     - [Make the contact form working](#make-the-contact-form-working)
     - [Nearly finished](#nearly-finished)
+    - [Custom Styling](#custom-styling)
 - [Contributing](#contributing)
 - [License](#license)
 - [Annotations](#annotations)
@@ -67,6 +68,10 @@ In order to see your site in action, run Hugo's built-in local server.
     $ hugo server -w
 
 Now enter `localhost:1313` in the address bar of your browser.
+
+
+# Custom Styling
+To edit the css this theme uses, add your CSS to the assets folder then include it as part one of the `[params]` with the label `custom_css`. More information and an example can be found in the example [`config.toml`](exampleSite/config.toml) file. 
 
 
 ## Contributing

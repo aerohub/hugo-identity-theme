@@ -2,6 +2,10 @@
 
 Hugo Identity Theme is based on [Identity template by HTML5 UP](http://html5up.net/identity). It was ported to Hugo for training and fun. It is rather configurable and flexible despite it's simplicity.
 
+## Demo
+
+[Demo on themes.gohugo.io](http://themes.gohugo.io/theme/hugo-identity-theme/)
+
 ## Features
 
 - Responsive design

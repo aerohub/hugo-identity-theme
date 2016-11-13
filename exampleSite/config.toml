@@ -24,6 +24,12 @@ googleAnalytics = "UA-XXXXX-Y"
   # to your site's css in the assets/ directory. 
 
   # custom_css = ["css/foo.bar"]
+
+  # Optional resource hints for all important static assets and tracking js.
+  #resource_hints = true
+
+  # Selective Font Awesome (see custom_icons.css as usage example)
+  #custom_fa = "custom_icons.css"
   
   # Personal settings
   

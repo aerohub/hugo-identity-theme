@@ -1,17 +1,17 @@
 name = "Hugo Identity"
 license = "Creative Commons Attribution 3.0 Unported License"
 licenselink = "//github.com/aerohub/hugo-identity/blob/master/LICENSE.md"
-description = "Little profile/card-style template based on Identity by HTML5 UP. May be useful for... everyone? My first experiment in Hugo theming. Don't be so serious :)"
+description = "Little profile/card-style template based on Identity by HTML5 UP."
 homepage = "//github.com/aerohub/hugo-identity-theme"
 tags = ["responsive", "configurable", "profile", "card", "contact", "social", "minimal", "google analytics"]
 min_version = 0.15
 
 [author]
   name = "Pavel Kanyshev"
-  homepage = "//github.com/aerohub/hugo-identity-theme"
+  homepage = "https://github.com/aerohub/hugo-identity-theme"
 
 # If porting an existing theme
 [original]
   name = "AJ"
-  homepage = "//n33.co/"
-  repo = "//html5up.net/identity"
+  homepage = "https://aj.lkn.io/"
+  repo = "https://html5up.net/identity"

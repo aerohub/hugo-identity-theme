@@ -24,9 +24,6 @@ googleAnalytics = "UA-XXXXX-Y"
   #favicon_png_sizes = "96x96"
   #favicon_svg = "favicon.svg"
 
-  # Background images can be written to images/backgrounds/
-  background = "bg1.jpg"
-
   # Custom styling
   # To customize the styling of this theme, uncomment and edit the following line to point 
   # to your the custom css in the assets/css/ directory.

@@ -77,10 +77,24 @@ googleAnalytics = "UA-XXXXX-Y"
     title = "Facebook"
     icon = "fa-facebook"
     link = "#"
-  
+
   # Footer settings
   [params.footer]
-    copyright = "Jane Doe"
+    # If copyright is not set, author is used
+    copyright = "Innovation inc"
+
+  # Page license
+  [params.license]
+    link = "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+    name = "CC-BY-SA-4.0"
+
+  # Credits
+  [[params.credits]]
+    # Title is used as URL text
+    title = "HTML5UP"
+    # Text will be used to explain the credit
+    text = "Design by"
+    link = "https://html5up.net"
 
   # Optional piwik tracking
   #[params.analytics.piwik]

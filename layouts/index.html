@@ -32,7 +32,7 @@
               {{ end }}
               {{ with .Site.Params.personal.biography }}
                 <hr>
-                <span class="biography">{{ . }}</span>
+                <span class="biography">{{ . | markdownify }}</span>
               {{ end }}
             </header>
             <footer>

@@ -14,16 +14,24 @@ googleAnalytics = "UA-XXXXX-Y"
   # You may place your images in corresponding folders and then set only filenames below to
   # change page's appearance
   
-  favicon = "favicon.ico"
-  appletouchicon = "apple-touch-icon-precomposed.png"
+  # Site icons
+  favicon_ico = "favicon.ico"
+  favicon_ico_sizes = "16x16 32x32"
+  appleicon = "apple.png"
+
+  # Additional options to supplement icons served
+  #favicon_png = "favicon.png"
+  #favicon_png_sizes = "96x96"
+  #favicon_svg = "favicon.svg"
+
+  # Background images can be written to images/backgrounds/
   background = "bg1.jpg"
-  avatar = "jane.jpg"
 
   # Custom styling
   # To customize the styling of this theme, uncomment and edit the following line to point 
-  # to your site's css in the assets/ directory. 
+  # to your the custom css in the assets/css/ directory.
 
-  # custom_css = ["css/foo.bar"]
+  # custom_css = ["foo.bar"]
 
   # Optional resource hints for all important static assets and tracking js.
   #resource_hints = true
@@ -31,10 +39,15 @@ googleAnalytics = "UA-XXXXX-Y"
   # Selective Font Awesome (see custom_icons.css as usage example)
   #custom_fa = "custom_icons.css"
   
-  # Personal settings
-  
-  name = "Jane Doe"
-  position = "Senior Psychonautics Engineer"
+  # Personal data
+  [params.personal]
+    # If name is not set, author is used
+    name = "Max Powers"
+    position = "Lead Engineer"
+    # Avatars can be written to images/avatars/
+    avatar = "avatar.jpg"
+    biography = """Max Powers is plain awesome. He worked at Corp A and B and is open for new work.  
+Even new lines and other markdown styles are working within the bio."""
 
   # Since this template is static, the contact form uses www.formspree.io as a
   # proxy. The form makes a POST request to their servers to send the actual

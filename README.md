@@ -1,10 +1,10 @@
 # Hugo Identity Theme
 
-Hugo Identity Theme is based on [Identity template by HTML5 UP](http://html5up.net/identity). It was ported to Hugo for training and fun. It is rather configurable and flexible despite it's simplicity.
+Hugo Identity Theme is based on [Identity template by HTML5 UP](https://html5up.net/identity). It was ported to Hugo for training and fun. It is rather configurable and flexible despite it's simplicity.
 
 ## Demo
 
-[Demo on themes.gohugo.io](http://themes.gohugo.io/theme/hugo-identity-theme/)
+[Demo on themes.gohugo.io](https://themes.gohugo.io/theme/hugo-identity-theme/)
 
 ## Features
 
@@ -40,7 +40,7 @@ Inside the folder of your Hugo site run:
     $ cd themes
     $ git clone https://github.com/aerohub/hugo-identity-theme
 
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
 
 ## Getting started
@@ -50,18 +50,18 @@ After installing the Identity Theme successfully it requires a just a few more s
 
 ### The config file
 
-Take a look inside the [`exampleSite`](//github.com/aerohub/hugo-identity-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/aerohub/hugo-identity-theme/blob/master/exampleSite/config.toml). To use it, copy the [`config.toml`](//github.com/aerohub/hugo-identity-theme/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme. Play with already placed avatars and background images or use yours.
+Take a look inside the [`exampleSite`](https://github.com/aerohub/hugo-identity-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/aerohub/hugo-identity-theme/blob/master/exampleSite/config.toml). To use it, copy the [`config.toml`](https://github.com/aerohub/hugo-identity-theme/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme. Play with already placed avatars and background images or use yours.
 
 
 ### Make the contact form working
 
-Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
+Since this page will be static, you can use [formspree.io](https://formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
-1. Enter your email address under 'email' in the [`config.toml`](//github.com/aerohub/hugo-identity-theme/blob/master/exampleSite/config.toml)
+1. Enter your email address under 'email' in the [`config.toml`](https://github.com/aerohub/hugo-identity-theme/blob/master/exampleSite/config.toml)
 2.  Enable form by setting `enable` to `true` in contact settings
 3. Upload the generated site to your server
 4. Send a dummy email yourself to confirm your account
-5. Click the confirm link in the email from [formspree.io](//formspree.io/)
+5. Click the confirm link in the email from [formspree.io](https://formspree.io/)
 6. You're done. Happy mailing!
 
 
@@ -80,18 +80,18 @@ To edit the css this theme uses, add your CSS to the assets folder then include 
 
 ## Contributing
 
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/aerohub/hugo-identity-theme/issues) to let me know. Or make directly a [pull request](//github.com/aerohub/hugo-identity-theme/pulls).
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/aerohub/hugo-identity-theme/issues) to let me know. Or make directly a [pull request](https://github.com/aerohub/hugo-identity-theme/pulls).
 
 
 ## License
 
-This work is licensed under the Creative Commons Attribution 3.0 Unported License. For more information read the [License](//github.com/aerohub/hugo-identity-theme/blob/master/LICENSE.md).
+This work is licensed under the Creative Commons Attribution 3.0 Unported License. For more information read the [License](https://github.com/aerohub/hugo-identity-theme/blob/master/LICENSE.md).
 
 
 ## Annotations
 
 Thanks 
 
-- to [spf13](//github.com/spf13) for creating Hugo and the awesome community around the project
-- to [digitalcraftsman](//github.com/digitalcraftsman) for creating Hugo themes and writing nice READMEs
+- to [spf13](https://github.com/spf13) for creating Hugo and the awesome community around the project
+- to [digitalcraftsman](https://github.com/digitalcraftsman) for creating Hugo themes and writing nice READMEs
 - to [n33](https://github.com/n33), (of course!) for original Identity Theme

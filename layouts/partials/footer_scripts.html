@@ -6,9 +6,7 @@
     document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
   }
 </script>
-{{ if .Site.googleAnalytics }}
-  {{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
+{{ template "_internal/google_analytics_async.html" . }}
 
 {{ with .Site.Params.analytics.piwik }}
   {{ partial "_analytics/piwik.html" . }}

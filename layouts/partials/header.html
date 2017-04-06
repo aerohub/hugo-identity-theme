@@ -1,0 +1,42 @@
+<head>
+  <title>{{ .Site.Title }}</title>
+  <meta charset="utf-8" />
+  {{ if .Site.Params.resource_hints }}
+    <!-- preconnect, preload -->
+    {{ if .Site.GoogleAnalytics }}
+      <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    {{ end }}
+    <link rel="preload" as="style" href="/assets/css/main.css" >
+    <link rel="preload" as="style" href="/assets/css/source-sans-pro-300-family.css" >
+    {{ if not .Site.Params.custom_fa }}
+      <link rel="preload" as="style" href="/assets/css/font-awesome.min.css" >
+    {{ else }}
+      <link rel="preload" as="style" href="/assets/css/{{ .Site.Params.custom_fa }}" >
+    {{ end }}
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2" crossorigin>
+    <link rel="preload" as="image" href="/assets/css/images/overlay.png" >
+    <link rel="preload" as="image" href="/images/backgrounds/bg1.jpg" >
+    {{ with .Site.Params.analytics.piwik }}
+      <link rel="preload" href="{{ .URL }}"/piwik.js crossorigin>
+    {{ end }}
+  {{ end }}
+
+  {{ if .Site.Params.favicon_ico }}
+    <link rel="icon" href="/images/icons/{{ .Site.Params.favicon_ico  }}" type="image/x-icon" {{ if .Site.Params.favicon_ico_sizes }}sizes="{{ .Site.Params.favicon_ico_sizes  }}"{{ end }} />
+  {{ end }}
+  {{ if .Site.Params.favicon_png }}
+    <link rel="icon" href="/images/icons/{{ .Site.Params.favicon_png  }}" type="image/png" {{ if .Site.Params.favicon_png_sizes }}sizes="{{ .Site.Params.favicon_png_sizes  }}"{{ end }} />
+  {{ end }}
+  {{ if .Site.Params.favicon_svg }}
+    <link rel="icon" href="/images/icons/{{ .Site.Params.favicon_svg  }}" type="image/svg+xml" sizes="any" />
+  {{ end }}
+  <link rel="apple-touch-icon-precomposed" href="/images/icons/{{ .Site.Params.appleicon  }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="/assets/js/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href={{ if .Site.Params.custom_fa }}"/assets/css/{{ .Site.Params.custom_fa }}" {{ else }}"/assets/css/font-awesome.min.css"{{ end }} />
+  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+  <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+  {{ .Hugo.Generator }}
+</head>

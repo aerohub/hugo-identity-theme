@@ -8,77 +8,115 @@ title = "Hugo Identity Theme"
 googleAnalytics = "UA-XXXXX-Y"
 
 [params]
-	
-	# Images settings
-	# Icons, backgrounds and avatars folders are placed in theme's static/images folder.
-	# You may place your images in corresponding folders and then set only filenames below to
-	# change page's appearance
-	
-	favicon = "favicon.ico"
-	appletouchicon = "apple-touch-icon-precomposed.png"
-	background = "bg1.jpg"
-	avatar = "jane.jpg"
+  
+  # Images settings
+  # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+  # You may place your images in corresponding folders and then set only filenames below to
+  # change page's appearance
+  
+  # Site icons
+  favicon_ico = "favicon.ico"
+  favicon_ico_sizes = "16x16 32x32"
+  appleicon = "apple.png"
+
+  # Additional options to supplement icons served
+  #favicon_png = "favicon.png"
+  #favicon_png_sizes = "96x96"
+  #favicon_svg = "favicon.svg"
 
   # Custom styling
   # To customize the styling of this theme, uncomment and edit the following line to point 
-  # to your site's css in the assets/ directory. 
+  # to your the custom css in the assets/css/ directory.
 
-  # custom_css = ["css/foo.bar"]
-	
-	# Personal settings
-	
-    name = "Jane Doe"
-	position = "Senior Psychonautics Engineer"
-	
-	# Extra stuff
-	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
-	# You can play with it downlading original theme right here:
-	# html5up.net/identity/download
-	#
-	# Since this template is static, the contact form uses www.formspree.io as a
-	# proxy. The form makes a POST request to their servers to send the actual
-	# email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-	# - enable form by setting 'enable' to 'true'
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-	
-	email = "your@email.com"
-	
-	# Contact form settings
-		
-	[params.contact]
-		enable = false
-		formTitle = "Touch Me!"
-		namePlaceholder = "Name"
-		emailPlaceholder = "Email"
-		messagePlaceholder = "Message"
-		buttonText = "Send it"
-		
-	# Social settings
-	# You may change these with your social links or add others
+  # custom_css = ["foo.bar"]
 
-	[[params.social]]
-		title = "Twitter"
-		icon = "fa-twitter"
-		link = "#"
+  # Optional resource hints for all important static assets and tracking js.
+  #resource_hints = true
 
-	[[params.social]]
-		title = "Instagram"
-		icon = "fa-instagram"
-		link = "#"
-		
-	[[params.social]]
-		title = "Facebook"
-		icon = "fa-facebook"
-		link = "#"
-	
-	# Footer settings
-	[params.footer]
-		copyright = "Jane Doe"
-		
+  # Selective Font Awesome (see custom_icons.css as usage example)
+  #custom_fa = "custom_icons.css"
+  
+  # Personal data
+  [params.personal]
+    # If name is not set, author is used
+    name = "Max Powers"
+    position = "Lead Engineer"
+    # Avatars can be written to images/avatars/
+    avatar = "avatar.jpg"
+    biography = """Max Powers is plain awesome. He worked at Corp A and B and is open for new work.  
+Even new lines and other markdown styles are working within the bio."""
+
+  # Since this template is static, the contact form uses www.formspree.io as a
+  # proxy. The form makes a POST request to their servers to send the actual
+  # email. Visitors can send up to a 1000 emails each month for free.
+  #
+  # What you need to do for the setup?
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email yourself to confirm your account
+  # - click the confirm link in the email from www.formspree.io
+  # - you're done. Happy mailing!
+
+  email = "your@email.com"
+
+  # It is possible to substitute formspring with other providers
+  # as an example the mailout plugin from caddy.
+  # Provide the post URL for the form and depending on the provider
+  # add some custom JS script to finish the implementation.
+  # postURL = "https://example.com/mailout/"
+
+  # Contact form settings
+    
+  [params.contact]
+    enable = false
+    formTitle = "Touch Me!"
+    namePlaceholder = "Name"
+    emailPlaceholder = "Email"
+    messagePlaceholder = "Message"
+    buttonText = "Send it"
+    
+  # Social settings
+  # You may change these with your social links or add others
+
+  [[params.social]]
+    title = "Twitter"
+    icon = "fa-twitter"
+    link = "#"
+
+  [[params.social]]
+    title = "Instagram"
+    icon = "fa-instagram"
+    link = "#"
+    
+  [[params.social]]
+    title = "Facebook"
+    icon = "fa-facebook"
+    link = "#"
+
+  # Footer settings
+  [params.footer]
+    # If copyright is not set, author is used
+    copyright = "Innovation inc"
+
+  # Page license
+  [params.license]
+    link = "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+    name = "CC-BY-SA-4.0"
+
+  # Credits
+  [[params.credits]]
+    # Title is used as URL text
+    title = "HTML5UP"
+    # Text will be used to explain the credit
+    text = "Design by"
+    link = "https://html5up.net"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="

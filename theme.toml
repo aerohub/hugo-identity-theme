@@ -4,7 +4,7 @@ licenselink = "//github.com/aerohub/hugo-identity/blob/master/LICENSE.md"
 description = "Little profile/card-style template based on Identity by HTML5 UP."
 homepage = "//github.com/aerohub/hugo-identity-theme"
 tags = ["responsive", "configurable", "profile", "card", "contact", "social", "minimal", "google analytics"]
-min_version = 0.15
+min_version = 0.16
 
 [author]
   name = "Pavel Kanyshev"

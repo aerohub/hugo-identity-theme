@@ -11,3 +11,7 @@
 {{ if .Site.Params.analytics.piwik }}
   {{ partial "_analytics/piwik.html" . }}
 {{ end }}
+
+{{ range .Site.Params.custom_js }}
+  <script src="{{ . | absURL }}"></script>
+{{ end }}

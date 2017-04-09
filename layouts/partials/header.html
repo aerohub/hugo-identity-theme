@@ -35,8 +35,15 @@
   <!--[if lte IE 8]><script src="/assets/js/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href={{ if .Site.Params.custom_fa }}"/assets/css/{{ .Site.Params.custom_fa }}" {{ else }}"/assets/css/font-awesome.min.css"{{ end }} />
-  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+
+  {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+  {{ end }}
+
+  <!--[if lte IE 8]><script src="/assets/js/html5shiv.js"></script><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+
   <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
   {{ .Hugo.Generator }}
 </head>

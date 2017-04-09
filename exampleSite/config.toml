@@ -24,14 +24,9 @@ googleAnalytics = "UA-XXXXX-Y"
   #favicon_png_sizes = "96x96"
   #favicon_svg = "favicon.svg"
 
-  # Custom styling
-  # To customize the styling of this theme, uncomment and edit the following line to point 
-  # to your the custom css in the assets/css/ directory.
-
-  # custom_css = ["foo.bar"]
-
-  # Optional resource hints for all important static assets and tracking js.
-  #resource_hints = true
+  # Link custom assets relative to /static
+  # custom_css = [""]
+  # custom_js  = [""]
 
   # Selective Font Awesome (see custom_icons.css as usage example)
   #custom_fa = "custom_icons.css"

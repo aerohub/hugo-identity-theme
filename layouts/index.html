@@ -31,12 +31,12 @@
                   {{ .Site.Params.author }}
                 {{ end }}
               </h1>
-              {{ with .Site.Params.personal.position }}
-                <h4 class="position">{{ . | markdownify }}</h4>
+              {{ with .Site.Params.personal.livesIn }}
+                <h5 class=location>Lives in {{ . | markdownify }}</h5>
               {{ end }}
 
-              {{ with .Site.Params.personal.livesIn }}
-                <h6>Lives in {{ . | markdownify }}</h6>
+              {{ with .Site.Params.personal.position }}
+                <h2 class="position">{{ . | markdownify }}</h2>
               {{ end }}
 
               {{ with .Site.Params.personal.scope }}
@@ -53,7 +53,6 @@
                 <hr>
               {{ end }}
             </header>
-
 
             <footer>
               <ul class="icons">

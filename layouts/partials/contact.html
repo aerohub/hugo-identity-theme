@@ -1,5 +1,5 @@
 <hr />
-<h2>{{ .Site.Params.contact.formTitle }}</h2>
+<h2>{{ .Site.Params.contact.title }}</h2>
 {{ if not .Site.Params.contact.postURL }}
   <form action="https://formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="post" name="sentMessage" id="contactForm" novalidate>
 {{ else }}
@@ -18,4 +18,3 @@
       <li><button type="submit">{{ .Site.Params.contact.buttonText }}</button></li>
     </ul>
   </form>
-<hr />

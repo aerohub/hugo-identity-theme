@@ -40,9 +40,15 @@ googleAnalytics = "UA-XXXXX-Y"
   [params.personal]
     # If name is not set, author is used
     name = "Max Powers"
-    position = "Lead Engineer"
     # Avatars can be written to images/avatars/
     avatar = "avatar.jpg"
+    position = "Lead Engineer"
+    livesIn = "[Munich, Germany](#some-maps-url)"
+    scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
     biography = """Max Powers is plain awesome. He worked at Corp A and B and is open for new work.  
 Even new lines and other markdown styles are working within the bio."""
 

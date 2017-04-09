@@ -24,7 +24,7 @@
           <section id="main">
             <header>
               <span class="avatar"><img src="/images/avatars/{{ .Site.Params.personal.avatar }}" alt="avatar" height="160" width="160" ></span>
-              <h1>
+              <h1 class="name">
                 {{ with .Site.Params.personal.name }}
                   {{ . }}
                 {{ else }}
@@ -32,13 +32,29 @@
                 {{ end }}
               </h1>
               {{ with .Site.Params.personal.position }}
-                <h3 class="position">{{ . }}</h3>
+                <h4 class="position">{{ . | markdownify }}</h4>
               {{ end }}
+
+              {{ with .Site.Params.personal.livesIn }}
+                <h6>Lives in {{ . | markdownify }}</h6>
+              {{ end }}
+
+              {{ with .Site.Params.personal.scope }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . | markdownify }}</li>
+                {{ end }}
+              </ul>
+              {{ end }}
+
               {{ with .Site.Params.personal.biography }}
                 <hr>
                 <span class="biography">{{ . | markdownify }}</span>
+                <hr>
               {{ end }}
             </header>
+
+
             <footer>
               <ul class="icons">
                 {{ range .Site.Params.social }}

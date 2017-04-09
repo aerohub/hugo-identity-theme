@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+@import url("source-sans-pro-300-family.css");
 /*
 	Identity by HTML5 UP
 	html5up.net | @n33co
@@ -158,14 +158,14 @@ h2 {
 h3 {
   font-size: 1.25em; }
 
-h4, li {
+h4 {
   font-size: 1em; }
 
-h5 {
-  font-size: 0.75em; }
+h5, li {
+  font-size: 0.85em; }
 
 h6, .biography {
-  font-size: 0.75em; }
+  font-size: 0.7em; }
 
 @media screen and (max-width: 480px) {
   h1 {
@@ -370,8 +370,9 @@ ol {
 
 ul {
   list-style: none;
-  margin: 0 0 1.5em 0;
-  padding-left: 1em; }
+  margin: 0 0 1.125em 0; }
+  ul li {
+    padding-bottom: 0.375em; }
   ul.alt {
     padding-left: 0; }
     ul.alt li {
@@ -383,8 +384,7 @@ ul {
   ul.icons {
     cursor: default;
     list-style: none;
-    padding-left: 0;
-    margin-top: -0.675em; }
+    padding-left: 0; }
     ul.icons li {
       display: inline-block;
       padding: 0.675em 0.5em; }
@@ -572,9 +572,12 @@ button,
   #main .name {
     font-weight: bold; }
   #main .location {
-    position: relative;
-    margin-top: -20px;
-    margin-bottom: 15px; }
+    display: block;
+    margin-top: -1.5em;
+    margin-bottom: 0.75em; }
+  #main .biography {
+    display: block;
+    margin-bottom: 1.5em; }
   @media screen and (max-width: 480px) {
     #main {
       min-width: 0;

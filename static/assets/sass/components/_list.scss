@@ -22,8 +22,11 @@
 
 	ul {
 		list-style: none;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1em;
+		margin: 0 0 (_size(element-margin) *0.75) 0;
+
+		li {
+			padding-bottom: (_size(element-margin) *0.25);
+		}
 
 		&.alt {
 			padding-left: 0;
@@ -43,7 +46,6 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			margin-top: -0.675em;
 
 			li {
 				display: inline-block;

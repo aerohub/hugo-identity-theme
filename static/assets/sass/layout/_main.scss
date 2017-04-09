@@ -59,11 +59,15 @@
 		}
 
 		.location {
-			position: relative;
-			margin-top: -20px;
-			margin-bottom: 15px;
+			display: block;
+			margin-top: -(_size(element-margin));
+			margin-bottom: (_size(element-margin) *0.5);
 		}
 
+		.biography {
+			display: block;
+			margin-bottom: _size(element-margin);
+		}
 
 		@include breakpoint(xsmall) {
 			min-width: 0;

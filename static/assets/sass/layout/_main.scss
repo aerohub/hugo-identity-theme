@@ -12,7 +12,7 @@
 
 	#main {
 		position: relative;
-		max-width: 100%;
+		max-width: 60%;
 		min-width: 27em;
 		@include padding(4.5em, 3em);
 
@@ -53,6 +53,17 @@
 				background: _palette(border);
 			}
 		}
+
+		.name {
+			font-weight: bold
+		}
+
+		.location {
+			position: relative;
+			margin-top: -20px;
+			margin-bottom: 15px;
+		}
+
 
 		@include breakpoint(xsmall) {
 			min-width: 0;

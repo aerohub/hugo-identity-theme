@@ -1,5 +1,5 @@
 <hr />
-<h2>{{ .Site.Params.contact.formTitle }}</h2>
+<h2>{{ .Site.Params.contact.title }}</h2>
 {{ if not .Site.Params.contact.postURL }}
   <form action="https://formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="post" name="sentMessage" id="contactForm" novalidate>
 {{ else }}
@@ -14,8 +14,30 @@
     <div class="field">
       <textarea name="message" id="message" placeholder="{{ .Site.Params.contact.messagePlaceholder }}" rows="4"></textarea>
     </div>
+    <div class="text-success" id="success" style="display:none;">
+      {{ with .Site.Params.contact.success }}
+        {{ . | markdownify }}
+      {{ else }}
+        "Thank you for contacting us."
+      {{ end }}
+    </div>
+    <div class="text-danger" id="error" style="display:none;">
+      {{ if .Site.Params.contact.error }}
+        {{ .Site.Params.contact.error | markdownify }}
+      {{ else }}
+        "Message could not be send. Please contact us at " {{ .Site.Params.contact.email }}
+      {{ end }}
+    </div>
     <ul class="actions">
       <li><button type="submit">{{ .Site.Params.contact.buttonText }}</button></li>
     </ul>
+    {{ range .Site.Params.contact.fields.hidden }}
+      {{ if eq .name "site" }}
+        <input type="hidden" name="{{ .name }}" value="{{ $.Permalink }}"/>
+      {{ else if eq .name "page" }}
+        <input type="hidden" name="{{ .name }}" value="{{ $.URL }}"/>
+      {{ else }}
+        <input type="hidden" name="{{ .name }}" value="{{ .value }}"/>
+      {{ end }}
+    {{ end }}
   </form>
-<hr />

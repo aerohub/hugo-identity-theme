@@ -21,16 +21,14 @@
 	}
 
 	ul {
-		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1em;
+		list-style: none;
+		margin: 0 0 (_size(element-margin) *0.75) 0;
 
 		li {
-			padding-left: 0.5em;
+			padding-bottom: (_size(element-margin) *0.25);
 		}
 
 		&.alt {
-			list-style: none;
 			padding-left: 0;
 
 			li {
@@ -48,7 +46,6 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			margin-top: -0.675em;
 
 			li {
 				display: inline-block;

@@ -12,7 +12,7 @@
 
 	#main {
 		position: relative;
-		max-width: 100%;
+		max-width: 60%;
 		min-width: 27em;
 		@include padding(4.5em, 3em);
 
@@ -52,6 +52,21 @@
 				z-index: -1;
 				background: _palette(border);
 			}
+		}
+
+		.name {
+			font-weight: bold
+		}
+
+		.location {
+			display: block;
+			margin-top: -(_size(element-margin));
+			margin-bottom: (_size(element-margin) *0.5);
+		}
+
+		.biography {
+			display: block;
+			margin-bottom: _size(element-margin);
 		}
 
 		@include breakpoint(xsmall) {

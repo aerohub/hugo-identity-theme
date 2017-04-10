@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
 <!--
   Identity by HTML5 UP
-  html5up.net | @ajlkn
+  https://html5up.net | @ajlkn
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-  Identity port to hugo
-  stp-ip.net/p/hugo-identity | @stp_ip
+  Hugo Identity by Pavel Kanyshev
+  https://github.com/aerohub
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+  Additional changes by Michael Grosser
+  https://about.stp-ip.net
   Free for personal and commercial use under the CCA 3.0 license (https://creativecommons.org/licenses/by/3.0/legalcode)
 -->
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
@@ -19,28 +23,44 @@
         <!-- Main -->
           <section id="main">
             <header>
-              <span class="avatar"><img src="/images/avatars/{{ .Site.Params.personal.avatar }}" alt="avatar" height="160" width="160" ></span>
-              <h1>
+              <span class="avatar"><img src="/images/avatars/{{ .Site.Params.personal.avatar }}" alt="avatar" height="130" width="130" ></span>
+              <h1 class="name">
                 {{ with .Site.Params.personal.name }}
                   {{ . }}
                 {{ else }}
                   {{ .Site.Params.author }}
                 {{ end }}
               </h1>
-              {{ with .Site.Params.personal.position }}
-                <h3 class="position">{{ . }}</h3>
+              {{ with .Site.Params.personal.livesIn }}
+                <h5 class=location>Lives in {{ . | markdownify }}</h5>
               {{ end }}
+
+              {{ with .Site.Params.personal.position }}
+                <h2 class="position">{{ . | markdownify }}</h2>
+              {{ end }}
+
+              {{ with .Site.Params.personal.scope }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . | markdownify }}</li>
+                {{ end }}
+              </ul>
+              {{ end }}
+
               {{ with .Site.Params.personal.biography }}
-                <hr>
                 <span class="biography">{{ . | markdownify }}</span>
               {{ end }}
             </header>
+
             <footer>
               <ul class="icons">
                 {{ range .Site.Params.social }}
                   <li><a href="{{ .link }}" class="{{ .icon }}">{{ .title }}</a></li>
                 {{ end }}
               </ul>
+              {{ if .Site.Params.contact.enable }}
+                {{ partial "contact.html" . }}
+              {{ end }}
             </footer>
           </section>
 

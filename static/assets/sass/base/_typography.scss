@@ -17,7 +17,6 @@
 		font-weight: _font(weight);
 		line-height: 2;
 		letter-spacing: _size(letter-spacing);
-		text-transform: uppercase;
 
 		@include breakpoint(xlarge) {
 			font-size: 11pt;
@@ -28,6 +27,8 @@
 			line-height: 1.75;
 		}
 	}
+
+
 
 	a {
 		@include vendor('transition', (
@@ -46,6 +47,7 @@
 
 		&:hover {
 			color: _palette(highlight);
+			text-decoration: underline
 		}
 	}
 
@@ -76,27 +78,33 @@
 		font-size: 1.85em;
 		letter-spacing: (_size(letter-spacing) * 1.1);
 		margin: 0 0 (_size(element-margin) * 0.35) 0;
+
+		&.name {
+			text-transform: uppercase;
+		}
 	}
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.25em;
 	}
 
 	h4 {
 		font-size: 1em;
 	}
 
-	h5 {
-		font-size: 1em;
+	h5, li {
+		font-size: 0.85em;
 	}
 
-	h6 {
-		font-size: 1em;
+	h6, .biography {
+		font-size: 0.7em;
 	}
+
+
 
 	@include breakpoint(xsmall) {
 		h1 {
@@ -119,5 +127,5 @@
 	hr {
 		border: 0;
 		border-bottom: solid _size(border-width) _palette(border);
-		margin: (_size(element-margin) * 2) 0;
+		margin: _size(element-margin) 0;
 	}

@@ -24,14 +24,9 @@ googleAnalytics = "UA-XXXXX-Y"
   #favicon_png_sizes = "96x96"
   #favicon_svg = "favicon.svg"
 
-  # Custom styling
-  # To customize the styling of this theme, uncomment and edit the following line to point 
-  # to your the custom css in the assets/css/ directory.
-
-  # custom_css = ["foo.bar"]
-
-  # Optional resource hints for all important static assets and tracking js.
-  #resource_hints = true
+  # Link custom assets relative to /static
+  # custom_css = [""]
+  # custom_js  = [""]
 
   # Selective Font Awesome (see custom_icons.css as usage example)
   #custom_fa = "custom_icons.css"
@@ -40,42 +35,62 @@ googleAnalytics = "UA-XXXXX-Y"
   [params.personal]
     # If name is not set, author is used
     name = "Max Powers"
-    position = "Lead Engineer"
     # Avatars can be written to images/avatars/
     avatar = "avatar.jpg"
+    position = "Lead Engineer"
+    livesIn = "[Munich, Germany](#some-maps-url)"
+    scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
     biography = """Max Powers is plain awesome. He worked at Corp A and B and is open for new work.  
 Even new lines and other markdown styles are working within the bio."""
 
-  # Since this template is static, the contact form uses www.formspree.io as a
-  # proxy. The form makes a POST request to their servers to send the actual
-  # email. Visitors can send up to a 1000 emails each month for free.
-  #
-  # What you need to do for the setup?
-  #
-  # - set your email address under 'email' below
-  # - upload the generated site to your server
-  # - send a dummy email yourself to confirm your account
-  # - click the confirm link in the email from www.formspree.io
-  # - you're done. Happy mailing!
 
-  email = "your@email.com"
-
-  # It is possible to substitute formspring with other providers
-  # as an example the mailout plugin from caddy.
-  # Provide the post URL for the form and depending on the provider
-  # add some custom JS script to finish the implementation.
-  # postURL = "https://example.com/mailout/"
 
   # Contact form settings
     
   [params.contact]
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    email = "your@email.com"
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+
+    #postURL = "https://example.com/mailout/"
+
     enable = false
-    formTitle = "Touch Me!"
+    title = "Touch Me!"
     namePlaceholder = "Name"
     emailPlaceholder = "Email"
     messagePlaceholder = "Message"
     buttonText = "Send it"
-    
+    success = "Thank you for contacting us."
+    error = "Message could not be send. Please contact us at "
+
+    # Add optional form fields to identify contact forms.
+    #[[params.contact.fields.hidden]]
+    #  name = "someID"
+    #  value = "example.com"
+
+    #[[params.contact.fields.hidden]]
+    # Special values for name such as "page" and "site" will be autofilled
+    #  name = "page"
+
   # Social settings
   # You may change these with your social links or add others
 

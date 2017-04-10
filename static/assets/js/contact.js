@@ -1,6 +1,8 @@
 // Contact form validation
-$.validate({
-  modules : 'html5, toggleDisabled'
+$( document ).ready(function() {
+  $.validate({
+    modules : 'html5, toggleDisabled'
+  });
 });
 
 // Async contact form

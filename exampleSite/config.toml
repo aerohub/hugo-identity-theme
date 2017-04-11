@@ -1,8 +1,9 @@
 # Site settings
 baseurl = "http://example.org" #without ending slash
 languageCode = "en-us"
-theme = "hugo-identity-theme"
 title = "Hugo Identity Theme"
+theme = "hugo-identity-theme"
+themesDir = "../.."
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-XXXXX-Y"

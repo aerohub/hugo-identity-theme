@@ -26,12 +26,15 @@ googleAnalytics = "UA-XXXXX-Y"
   #favicon_svg = "favicon.svg"
 
   # Link custom assets relative to /static
-  # custom_css = [""]
-  # custom_js  = [""]
+  #custom_js  = [""]
+  #custom_css = ["background.css", "icons.css"]
 
-  # Selective Font Awesome (see custom_icons.css as usage example)
-  #custom_fa = "custom_icons.css"
-  
+  # Customization switches
+  # Overwrite FontAwesome: see icons.css
+  #custom_icons = true
+  # Overwrite background: see background.css
+  #custom_background = true
+
   # Personal data
   [params.personal]
     # If name is not set, author is used

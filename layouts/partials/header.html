@@ -17,10 +17,6 @@
   {{ end }}
   <link rel="apple-touch-icon-precomposed" href="/images/icons/{{ .Site.Params.appleicon  }}" />
 
-  {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ . | absURL }}">
-  {{ end }}
-
   <link rel="stylesheet" href="/assets/css/main.css" />
 
   {{ if not .Site.Params.custom_background }}
@@ -29,6 +25,10 @@
 
   {{ if not .Site.Params.custom_icons }}
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+  {{ end }}
+
+  {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ . | absURL }}">
   {{ end }}
 
   <!--[if lte IE 8]><script src="/assets/js/html5shiv.js"></script><![endif]-->

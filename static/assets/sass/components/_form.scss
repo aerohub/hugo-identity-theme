@@ -29,7 +29,7 @@
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 	}
 
-	input[type="text"],
+	input:not([type]),
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
@@ -77,7 +77,7 @@
 		}
 	}
 
-	input[type="text"],
+	input:not([type]),
 	input[type="password"],
 	input[type="email"],
 	select {

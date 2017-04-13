@@ -6,7 +6,7 @@
   <form  action="{{ .Site.Params.contact.postURL }}" method="POST" name="sentMessage" id="contactForm" novalidate>
 {{ end }}
     <div class="field">
-      <input type="text" name="name" id="name" placeholder="{{ .Site.Params.contact.namePlaceholder }}" />
+      <input name="name" id="name" placeholder="{{ .Site.Params.contact.namePlaceholder }}" />
       </div>
     <div class="field">
       <input type="email" name="email" id="email" placeholder="{{ .Site.Params.contact.emailPlaceholder }}" />

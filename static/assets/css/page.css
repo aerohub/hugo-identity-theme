@@ -1,0 +1,54 @@
+/* Basic */
+@media screen {
+  html, body {
+    min-width: 320px; } }
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/bg1.jpg");
+  background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/bg1.jpg");
+  background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/bg1.jpg");
+  background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/backgrounds/bg1.jpg");
+  background-repeat: repeat,			no-repeat,			no-repeat;
+  background-size: 100px 100px,	cover,				cover;
+  background-position: top left,		center center,		bottom center;
+  background-attachment: fixed,			fixed,				fixed; }
+  body:after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-repeat: repeat,			no-repeat;
+    background-size: 100px 100px,	cover;
+    background-position: top left,		center center;
+    -moz-transition: opacity 1.75s ease-out;
+    -webkit-transition: opacity 1.75s ease-out;
+    -ms-transition: opacity 1.75s ease-out;
+    transition: opacity 1.75s ease-out; }
+  body.is-loading:after {
+    opacity: 1; }
+
+/*# sourceMappingURL=page.css.map */

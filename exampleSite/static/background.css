@@ -1,0 +1,8 @@
+body {
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(101,235,86,1) 0%, rgba(99,232,88,1) 1%, rgba(45,140,137,1) 34%, rgba(3,0,161,1) 100%), url("bg.jpg");
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(101,235,86,1) 0%, rgba(99,232,88,1) 1%, rgba(45,140,137,1) 34%, rgba(3,0,161,1) 100%), url("bg.jpg");
+    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(101,235,86,1) 0%, rgba(99,232,88,1) 1%, rgba(45,140,137,1) 34%, rgba(3,0,161,1) 100%), url("bg.jpg");
+    background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(101,235,86,1) 0%, rgba(99,232,88,1) 1%, rgba(45,140,137,1) 34%, rgba(3,0,161,1) 100%), url("bg.jpg");
+}

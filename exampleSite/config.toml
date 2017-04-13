@@ -5,6 +5,9 @@ title = "Hugo Identity Theme"
 theme = "hugo-identity-theme"
 themesDir = "../.."
 
+# Disable unnecessary kinds
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-XXXXX-Y"
 

@@ -36,4 +36,7 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
 
   <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+  {{ with .Site.Params.contact.captcha }}
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  {{ end }}
 </head>

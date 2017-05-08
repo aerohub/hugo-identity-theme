@@ -19,3 +19,8 @@ $('form[id=contactForm]').submit(function(){
   });
   return false;
 });
+
+// Callback function for captcha
+function onSubmit(token) {
+  $('form[id=contactForm]').submit();
+}

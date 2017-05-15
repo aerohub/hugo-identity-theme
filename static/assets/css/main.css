@@ -292,6 +292,9 @@ input[type="radio"] + label:before {
   color: #616f77 !important;
   opacity: 1.0; }
 
+.grecaptcha-badge {
+  display: none; }
+
 /* Icon */
 .icon {
   text-decoration: none;

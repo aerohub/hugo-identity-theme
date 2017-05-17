@@ -24,3 +24,7 @@
 {{ range .Site.Params.custom_js }}
   <script src="{{ . | absURL }}"></script>
 {{ end }}
+
+  {{ with .Site.Params.contact.captcha }}
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  {{ end }}

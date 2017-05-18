@@ -22,5 +22,8 @@ $('form[id=contactForm]').submit(function(){
 
 // Callback function for captcha
 function onSubmit(token) {
+  if (!token) {
+     return;
+  }
   $('form[id=contactForm]').submit();
 }

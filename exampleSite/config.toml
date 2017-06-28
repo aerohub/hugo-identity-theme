@@ -12,12 +12,12 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 #googleAnalytics = "UA-XXXXX-Y"
 
 [params]
-  
+
   # Images settings
   # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
   # You may place your images in corresponding folders and then set only filenames below to
   # change page's appearance
-  
+
   # Site icons
   favicon_ico = "favicon.ico"
   favicon_ico_sizes = "16x16 32x32"
@@ -55,7 +55,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 Even new lines and other markdown styles are working within the bio."""
 
   # Contact form settings
-    
+
   [params.contact]
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual

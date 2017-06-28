@@ -1,5 +1,12 @@
-// Contact form validation
-$( document ).ready(function() {
+// Initial form validation
+$(document).ready(function() {
+  $.validate({
+    modules : 'html5, toggleDisabled'
+  });
+});
+
+// Revalidate on change
+$('form[id=contactForm]').change(function() {
   $.validate({
     modules : 'html5, toggleDisabled'
   });

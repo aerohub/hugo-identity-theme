@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 // Revalidate on change
-$('form[id=contactForm]').change(function() {
+$('form[id=contactForm] textarea').change(function() {
   $.validate({
     modules : 'html5, toggleDisabled'
   });

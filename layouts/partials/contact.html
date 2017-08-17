@@ -2,6 +2,7 @@
 <h2>{{ .Site.Params.contact.title }}</h2>
 {{ if not .Site.Params.contact.postURL }}
   <form action="https://formspree.io/{{ with .Site.Params.contact.email }}{{.}}{{ end }}" method="post" name="sentMessage" id="contactForm" novalidate>
+    <input type="text" name="_gotcha" style="display:none" />
 {{ else }}
   <form  action="{{ .Site.Params.contact.postURL }}" method="POST" name="sentMessage" id="contactForm" novalidate>
 {{ end }}

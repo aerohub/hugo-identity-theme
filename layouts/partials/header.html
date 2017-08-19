@@ -5,7 +5,6 @@
   <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
   <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
   {{ .Hugo.Generator }}
-  <title>{{ .Site.Title }}</title>
   {{ if .Site.Params.favicon_ico }}
     <link rel="icon" href="/images/icons/{{ .Site.Params.favicon_ico  }}" type="image/x-icon" {{ if .Site.Params.favicon_ico_sizes }}sizes="{{ .Site.Params.favicon_ico_sizes  }}"{{ end }} />
   {{ end }}

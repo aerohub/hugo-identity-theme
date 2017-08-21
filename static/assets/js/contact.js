@@ -14,15 +14,15 @@ $('form[id=contactForm]').change(function() {
 
 // Async contact form
 $('form[id=contactForm]').submit(function(){
-  $.post($(this).attr('action'), $(this).serialize(), function(res){
-    $('form[id=contactForm] #success').hide();
-    $('form[id=contactForm] #error').hide();
-    if (res.code == "200")
+  $('form[id=contactForm] #success').hide();
+  $('form[id=contactForm] #error').hide();
+
+  // AJAX POST, with contact form data serialized, which expects a JSON response
+  // Datatype must be set to 'json' to use formspree.io
+  $.post($(this).attr('action'), $(this).serialize(), function(){
       $('form[id=contactForm] #success').show();
-    }).fail(function(){
-    $('form[id=contactForm] #success').hide();
-    $('form[id=contactForm] #error').hide();
-    $('form[id=contactForm] #error').show();
+    }, 'json').fail(function(){
+      $('form[id=contactForm] #error').show();
   });
   return false;
 });

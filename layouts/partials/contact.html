@@ -30,8 +30,11 @@
       {{ end }}
     </div>
     <ul class="actions">
-      <li><button type="submit" {{ with .Site.Params.contact.captcha }} class="g-recaptcha"
-data-sitekey="{{ .sitekey }}" data-callback="onSubmit" data-badge="inline" {{ end }}>{{ .Site.Params.contact.buttonText }}</button></li>
+      <li><button type="submit"
+        {{ if .Site.Params.contact.postURL }} 
+          {{ with .Site.Params.contact.captcha }} class="g-recaptcha"
+data-sitekey="{{ .sitekey }}" data-callback="onSubmit" data-badge="inline" {{ end }}
+        {{ end }}>{{ .Site.Params.contact.buttonText }}</button></li>
     </ul>
     {{ range .Site.Params.contact.fields.hidden }}
       {{ if eq .name "site" }}

@@ -19,22 +19,32 @@
       {{ with .Site.Params.contact.success }}
         {{ . | markdownify }}
       {{ else }}
-        "Thank you for contacting us."
+        Thank you for contacting us.
       {{ end }}
     </div>
     <div class="text-danger" id="error" style="display:none;">
       {{ if .Site.Params.contact.error }}
         {{ .Site.Params.contact.error | markdownify }}
       {{ else }}
-        "Message could not be send. Please contact us at " {{ .Site.Params.contact.email }}
+        Message could not be send. Please contact us at  {{ .Site.Params.contact.email }}.
       {{ end }}
     </div>
     <ul class="actions">
-      <li><button type="submit"
-        {{ if .Site.Params.contact.postURL }} 
-          {{ with .Site.Params.contact.captcha }} class="g-recaptcha"
-data-sitekey="{{ .sitekey }}" data-callback="onSubmit" data-badge="inline" {{ end }}
-        {{ end }}>{{ .Site.Params.contact.buttonText }}</button></li>
+      <noscript>
+        <div class="text-danger" id="js-error">
+          Message can not be send with javascript disabled. Please contact us at {{ .Site.Params.contact.email }}.
+        </div>
+      </noscript>
+      {{ if .Site.Params.contact.postURL }}
+        {{ with .Site.Params.contact.captcha }}
+          <div class="text-danger" id="val-error" style="display:none;">
+            There was an error with your validation. Please contact us at {{ $.Site.Params.contact.email }}.
+          </div>
+          <li><button type="submit" disabled="disabled" class="g-recaptcha" data-sitekey="{{ .sitekey }}" data-callback="onSubmit" data-badge="inline">{{ $.Site.Params.contact.buttonText }}</button></li>
+        {{ else }}
+          <li><button type="submit" disabled="disabled">{{ .Site.Params.contact.buttonText }}</button></li>
+        {{ end }}
+      {{ end }}
     </ul>
     {{ range .Site.Params.contact.fields.hidden }}
       {{ if eq .name "site" }}

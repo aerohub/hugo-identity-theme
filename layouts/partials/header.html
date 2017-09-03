@@ -16,23 +16,23 @@
   {{ end }}
   <link rel="apple-touch-icon-precomposed" href="{{ .Site.Params.appleicon | printf "/images/icons/%s" | relURL  }}" />
 
-	<link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relURL }}" />
 
   {{ if not .Site.Params.custom_background }}
-		<link rel="stylesheet" href="{{ "/assets/css/page.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/assets/css/page.css" | relURL }}" />
   {{ end }}
 
   {{ if not .Site.Params.custom_icons }}
-		<link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | relURL }}" />
   {{ end }}
 
   {{ range .Site.Params.custom_css }}
     <link rel="stylesheet" href="{{ . | absURL }}">
   {{ end }}
 
-	<!--[if lte IE 8]><script src="{{ "/assets/js/html5shiv.js" | relURL }}"></script><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "/assets/css/ie8.css" | relURL }}" /><![endif]-->
-	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "/assets/css/ie9.css" | relURL }}" /><![endif]-->
+  <!--[if lte IE 8]><script src="{{ "/assets/js/html5shiv.js" | relURL }}"></script><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/assets/css/ie8.css" | relURL }}" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/assets/css/ie9.css" | relURL }}" /><![endif]-->
 
-	<noscript><link rel="stylesheet" href="{{ "/assets/css/noscript.css" | relURL }}" /></noscript>
+  <noscript><link rel="stylesheet" href="{{ "/assets/css/noscript.css" | relURL }}" /></noscript>
 </head>

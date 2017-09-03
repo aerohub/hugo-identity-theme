@@ -55,7 +55,7 @@
             <footer>
               <ul class="icons">
                 {{ range .Site.Params.social }}
-                  <li><a href="{{ .link }}" class="{{ .icon }}">{{ .title }}</a></li>
+                  <li><a href="{{ .link }}" class="{{ .icon }}" target="{{ .target | default "_self" }}">{{ .title }}</a></li>
                 {{ end }}
               </ul>
               {{ if .Site.Params.contact.enable }}

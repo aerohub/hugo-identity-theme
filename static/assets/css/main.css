@@ -536,6 +536,12 @@ button,
       #main .avatar:before {
         left: -2em;
         width: calc(100% + 4em); } }
+  body.is-loading #main {
+    opacity: 0;
+    -moz-transform: rotateX(15deg);
+    -webkit-transform: rotateX(15deg);
+    -ms-transform: rotateX(15deg);
+    transform: rotateX(15deg); }
 
 /* Footer */
 #footer {

@@ -106,19 +106,19 @@ Even new lines and other markdown styles are working within the bio."""
 
   [[params.social]]
     title = "Twitter"
-    icon = "fa-twitter"
+    icon = "fab fa-twitter"
     link = "#"
     target = "_blank"
 
   [[params.social]]
     title = "Instagram"
-    icon = "fa-instagram"
+    icon = "fab fa-instagram"
     link = "#"
     target = "_blank"
 
   [[params.social]]
     title = "Facebook"
-    icon = "fa-facebook"
+    icon = "fab fa-facebook-f"
     link = "#"
     target = "_blank"
 

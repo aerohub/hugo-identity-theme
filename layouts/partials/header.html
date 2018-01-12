@@ -23,8 +23,8 @@
   {{ end }}
 
   {{ if not .Site.Params.custom_icons }}
-    <link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | relURL }}" />
-  {{ end }}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
+    {{ end }}
 
   {{ range .Site.Params.custom_css }}
     <link rel="stylesheet" href="{{ . | absURL }}">

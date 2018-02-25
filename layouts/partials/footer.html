@@ -1,6 +1,6 @@
 <footer id="footer">
   <ul class="copyright">
-    <li>&copy; 
+    <li>&copy; {{ now.Format "2006" }}
       {{ with .Site.Params.footer.copyright }}
         {{ . }}
       {{ else }}

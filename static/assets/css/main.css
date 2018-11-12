@@ -187,7 +187,6 @@ textarea {
     content: "";
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important; }
@@ -241,7 +240,6 @@ input[type="radio"] {
     input[type="radio"] + label:before {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
-      font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
       text-transform: none !important; }
@@ -303,7 +301,6 @@ input[type="radio"] + label:before {
   .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important; }
@@ -338,7 +335,7 @@ ul {
     ul.icons li {
       display: inline-block;
       padding: 0.675em 0.5em; }
-      ul.icons li a {
+      ul.icons li i {
         text-decoration: none;
         position: relative;
         display: block;
@@ -351,19 +348,18 @@ ul {
         text-align: center;
         text-indent: 3.75em;
         white-space: nowrap; }
-        ul.icons li a:before {
+        ul.icons li i:before {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
-          font-family: FontAwesome;
           font-style: normal;
           font-weight: normal;
           text-transform: none !important; }
-        ul.icons li a:before {
+        ul.icons li i:before {
           color: #ffffff;
           text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf; }
-        ul.icons li a:hover:before {
+        ul.icons li i:hover:before {
           text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496; }
-        ul.icons li a:before {
+        ul.icons li i:before {
           position: absolute;
           top: 0;
           left: 0;
@@ -373,7 +369,7 @@ ul {
           line-height: inherit;
           text-align: center;
           text-indent: 0; }
-        ul.icons li a:hover {
+        ul.icons li i:hover {
           border-color: #ff7496; }
     @media screen and (max-width: 480px) {
       ul.icons li a:before {

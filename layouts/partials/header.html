@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
   <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
-  {{ .Hugo.Generator }}
+  {{ hugo.Generator }}
   {{ if .Site.Params.favicon_ico }}
     <link rel="icon" href="{{ .Site.Params.favicon_ico | printf "/images/icons/%s" | relURL  }}" type="image/x-icon" {{ if .Site.Params.favicon_ico_sizes }}sizes="{{ .Site.Params.favicon_ico_sizes  }}"{{ end }} />
   {{ end }}
